@@ -1,11 +1,13 @@
-import React from 'react'
+import { Bounds } from '@react-three/drei'
 
-const Player = () => {
+function Player() {
   return (
-    <mesh position={[0,0,10]}>
+    <Bounds fit clip observe margin={10}>
+      <mesh position={[0, 0, 10]}>
         <boxGeometry args={[15, 15, 20]} />
         <meshLambertMaterial color={0xffffff} flatShading={true} />
-    </mesh>
+      </mesh>
+    </Bounds>
   )
 }
 
