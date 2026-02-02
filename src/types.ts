@@ -12,6 +12,8 @@ export type Row =
         direction: boolean;
         speed: number;
         vehicles: {
+            speed: number;
+            direction: boolean;
             initialTileIndex: number; 
             color: THREE.ColorRepresentation
         }[]
